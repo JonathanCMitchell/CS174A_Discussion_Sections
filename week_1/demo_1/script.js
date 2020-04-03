@@ -48,7 +48,7 @@ window.addEventListener("load", function setupAnimation(evt) {
             gl.viewport(0, 0,
                 gl.drawingBufferWidth, gl.drawingBufferHeight);
         }
-
+        console.log("Here I am")
         // Get a random color value using a helper function.
         var color = getRandomColor();
         // Set the WebGLRenderingContext clear color to the
@@ -56,6 +56,7 @@ window.addEventListener("load", function setupAnimation(evt) {
         gl.clearColor(color[0], color[1], color[2], 1.0);
         // Clear the context with the newly set color.
         gl.clear(gl.COLOR_BUFFER_BIT);
+        
     }
 
     // Random color helper function.
